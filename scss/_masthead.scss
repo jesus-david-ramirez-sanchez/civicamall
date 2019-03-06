@@ -1,22 +1,46 @@
 // Styling for the masthead
 header.masthead {
     position: relative;
-
     width: 100%;
-    padding-top: 150px;
+    padding-top: 120px;
     padding-bottom: 100px;
 
     color: white;
-    background: url('../img/bg-pattern.png'), $theme-secondary;
-    background: url('../img/bg-pattern.png'), -webkit-linear-gradient(to left, $theme-secondary, $theme-tertiary);
-    background: url('../img/bg-pattern.png'), linear-gradient(to left, $theme-secondary, $theme-tertiary);
+    background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.411),
+      rgba(0, 0, 0, 0.322)
+    ),
+    url(../img/Fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     .header-content {
-        max-width: 500px;
-        margin-bottom: 100px;
+        background: rgba(0, 0, 0, 0.603);
+        padding: 40px;
+        border-radius: 10px;
+        max-width: 100%;
+        margin-bottom: 90px;
 
         text-align: center;
         h1 {
-            font-size: 30px;
+            font-size: 300%;
+        }
+
+        @media screen and(max-width: 768px){
+            h1{
+                font-size: 15px;
+                margin: 0px, -20px;
+            }
+        }
+
+        h2{
+            font-style: normal !important;
+            font-size: 300%;
+            font-weight: bold;
+            i{
+                font-style: normal !important;
+                color: $theme-secondary;
+            }
         }
     }
     .device-container {
@@ -37,7 +61,7 @@ header.masthead {
 
             text-align: left;
             h1 {
-                font-size: 50px;
+                font-size: 22px;
             }
         }
         .device-container {
